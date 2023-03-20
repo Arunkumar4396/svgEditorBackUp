@@ -1,0 +1,79 @@
+.button {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editFullBody {
+    background: #f5f6fa;
+    border-top: 1px solid #0a0a0a;
+    margin: -7px 5px 5px 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sideBar {
+    width: 160px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    border: 2px solid lightgray;
+
+
+}
+
+.centerBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    flex: 1 1;
+}
+
+.ImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px !important;
+    height: 400px !important;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+}
+
+/* .svgImg {
+    width: 100%;
+    background-size: cover;
+    height: 0;
+    max-height: inherit !important;
+    max-width: inherit !important;
+    padding: 0;
+    reset
+    padding-bottom: 92%;
+    border: thin dotted darkgrey;
+} */

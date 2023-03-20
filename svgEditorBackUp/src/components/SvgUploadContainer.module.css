@@ -1,0 +1,43 @@
+.container {
+    background: #f5f6fa;
+    border-top: 1px solid #ebedf5;
+    margin: -5px 5px 5px 5px;
+    border-radius: 5px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+.upload {
+
+    width: 204px;
+    height: 204px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #fafafa;
+    border: 1px dashed #1afafa;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload label {
+
+    color: rgb(136, 136, 136);
+    font-size: 20px;
+}
+
+.Icon {
+    margin-top: 3px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
