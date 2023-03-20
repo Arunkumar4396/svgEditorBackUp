@@ -6,6 +6,8 @@ function useUndo() {
   const [history, setHistory] = useState({ history: [], currentIndex: 0 });
 
   const [state, setState] = useState();
+  console.log("state", state);
+  console.log("history", history.currentIndex);
 
   const execute = (executeFn, undoFn) => {
     const cmd = { executeFn, undoFn };

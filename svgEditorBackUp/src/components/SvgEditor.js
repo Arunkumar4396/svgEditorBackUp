@@ -5,23 +5,25 @@ import Header from "./Header";
 import ColorPickerComponent from "./ColorPickerComponent";
 import { useContext } from "react";
 import { UndoRedoContext } from "../context/UndoRedoContext";
-
+import { useEffect } from "react";
 const SvgEditor = (props) => {
-  console.log(props.colors);
   const useUndoRedo = useContext(UndoRedoContext);
-
   const [initialState, setInitialState] = useState({
     originalSvg: props.svgData,
     colors: props.colors,
     svgUrl: props.fileDataURL,
     updatedsvgData: props.svgData,
   });
+  useEffect((e) => {
+    handleColorChange();
+  }, []);
 
   useUndoRedo.state = initialState;
 
   let updatedSvg = null;
 
   const handleColorChange = (key, value) => {
+    console.log("Handle COlor Change Called");
     let mapData = { key: key, value: value };
     useUndoRedo.execute(
       () => updatedSvg(initialState.updatedsvgData, mapData),
